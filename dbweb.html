@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Base de datos con firebase</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<form id="formulario">
+		<h2>Base de datos con firebase</h2>
+		<h3>Alumnos</h3>
+		<label for="matricula">Matricula</label>
+		<input type="text" id="matricula" name="matricula" required>
+		<label for="nombre">Nombre</label>
+		<input type="text" id="nombre" name="nombre" required>
+		<label for="carrera">Carrera</label>
+		<input type="text" id="carrera" name="carrera" required>
+		<label for="genero">Genero</label>
+		<select name="genero" id="genero">
+			<option value="0" selected disabled>Introduzca un genero</option>
+			<option value="Masculino">Masculino</option>
+			<option value="Femenino">Femenino</option>
+		</select>
+		<div class="buttons">
+			<button class="btn" type="submit" id="btnAgregar">Agregar</button>
+			<button class="btn" id="btnConsultar">Consultar</button>
+			<button class="btn" id="btnActualizar">Actualizar</button>
+			<button class="btn" id="btnEliminar">Eliminar</button>
+			<button class="btn" type="button" id="btnMostrar">Mostrar Registros</button>
+			<button class="btn" type="reset" id="btnLimpiar">Limpiar</button>
+		</div>
+
+		<section id="lista" class="none"></section>
+	</form>
+
+	<script src="js/config.js" type="module"></script>
+</body>
+
+</html>
