@@ -92,7 +92,11 @@ select {
 
 .renglon {
 	display: grid;
-	grid-template-columns: 17.5% 40% 15% 15% 12.5%;
+	grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+}
+
+.renglon:hover {
+	background-color: #e5e5e5;
 }
 
 .campo {
@@ -102,10 +106,6 @@ select {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.campo:hover {
-	background-color: #e5e5e5;
 }
 
 .bold {
